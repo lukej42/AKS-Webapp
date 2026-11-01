@@ -1,0 +1,72 @@
+# ==========================================
+# .NET / C# Build & Runtime Artifacts
+# ==========================================
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet Packages & Cache
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+project.lock.json
+project.assets.json
+
+# User-specific & local settings
+*.user
+*.userosscache
+*.sln.docstates
+appsettings.Development.json
+appsettings.Local.json
+launchSettings.json
+
+# Visual Studio & VS Code cache/workspaces
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.userprefs
+
+# Dotnet publishing output
+publish/
+**/publish/
+
+# ==========================================
+# Helm & Kubernetes Artifacts
+# ==========================================
+# Packaged chart archives (.tgz)
+helm/*.tgz
+helm/**/*.tgz
+*.tgz
+
+# Helm dependency chart archives & lock files if dynamically restored
+helm/**/charts/*.tgz
+
+# Local values overrides containing secrets/credentials
+helm/**/values.local.yaml
+helm/**/values-local.yaml
+helm/**/secrets.yaml
+helm/**/secret-values.yaml
+helm/**/.helmignore.bak
+
+# ==========================================
+# OS & Environment Files
+# ==========================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment variable files
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
